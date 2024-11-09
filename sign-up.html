@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/logoo.svg" alt="favicon logo" />
+    <title>Bootstrap-Appistry-Project</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-black">
+      <div class="container">
+        <a href="index.html" class="navbar-brand text-light fw-bold">
+          Appistry
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link fw-semibold text-white"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="detail.html" class="nav-link fw-semibold text-white"
+                >Details</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="sign-up.html" class="nav-link fw-semibold text-light"
+                >SignUp</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="contact.html"
+                class="nav-link btn btn-outline-light fw-semibold px-4 mx-4 text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+ 
+    <div class="cont ">
+        <div class="form sign-in">
+            <h2>Welcome</h2>
+            <label>
+                <span>Email</span>
+                <input type="email" />
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" />
+            </label>
+            <p class="forgot-pass">Forgot password?</p>
+            <button type="button" class="submit">Sign In</button>
+         
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                 
+                    <h3>Don't have an account? Please Sign up!<h3>
+                </div>
+                <div class="img__text m--in">
+                
+                    <h3>If you already has an account, just sign in.<h3>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Sign Up</span>
+                    <span class="m--in">Sign In</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <h2>Create your Account</h2>
+                <label>
+                    <span>Name</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" />
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password" />
+                </label>
+                <button type="button" class="submit">Sign Up</button>
+                
+            </div>
+        </div>
+    </div>
+
+   
+
+    <footer class="footer bg-black text-light py-6">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 my-3">
+            <h6 class="text-primary">About Appistry</h6>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae, possimus! Similique asperiores aliquid accusantium
+              laudantium.
+            </p>
+          </div>
+          <div class="col-md-4 my-3">
+            <h6 class="text-primary">Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                Important:
+                <a href="#" class="text-secondary">Terms & Conditions</a>,
+                <a href="#" class="text-secondary">Privacy Policy</a>
+              </li>
+              <li>
+                Useful: <a href="#" class="text-secondary">Icon Library</a>,
+                <a href="#" class="text-secondary">Illustrations</a>
+              </li>
+              <li>
+                Menu: <a href="#" class="text-secondary">Home</a>,
+                <a href="#details" class="text-secondary">Details</a>,
+                <a href="#services" class="text-secondary">Services</a>,
+                <a href="#contact" class="text-secondary">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="mb-4">
+              <a href="#" class="text-decoration-none">
+                <i class="fab fa-facebook fa-3x text-dark mx-2"></i>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <i class="fab fa-twitter fa-3x text-dark mx-2"></i>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <i class="fab fa-instagram fa-3x text-dark mx-2"></i>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <i class="fab fa-pinterest fa-3x text-dark mx-2"></i>
+              </a>
+            </div>
+            <p>
+              We would love to hear from you
+              <a href="mailto:contact@site.com" class="text-secondary"
+                ><strong>contact@site.com</strong></a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.querySelector('.img__btn').addEventListener('click', function() {
+          document.querySelector('.cont').classList.toggle('s--signup');
+      });
+  </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+  </body>
+</html>
